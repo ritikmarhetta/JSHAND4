@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js handson 4</title>
+</head>
+<body>
+    <pre>
+        Q. Find the product
+const Find_Prod = (array, N) => 
+        {
+          let product=1;
+          for(let i=0; i < N; i++)
+          {
+            product=product*array[i];
+          }
+          return product;
+        };
+
+
+<hr>
+Q. 2 Find the Sum
+const Find_Sum = (array, N) => 
+        {
+          let sum=0;
+          for(let i=0; i < N; i++)
+          {
+            sum+=array[i];
+          }
+          return sum;
+        };        
+
+        <hr>
+        Q.3 Count Ocurences
+        const findCount = (N, K, Arr) => 
+                {
+                  let counter=0;
+                  for(let j=0; j < N;j++)
+                  {
+                    if(Arr[j]===K)
+                    {
+                      counter++;
+                    }
+                  }
+                  return counter;
+                };
+<hr>
+Q.4 Even Odd
+        const findEvenOdd = (N, Arr) => 
+        {
+          let B=[0,0];
+          for(let i=0; i < N; i++)
+          {
+            if(Arr[i]%2===0)
+            {
+              B[0]+=Arr[i];
+            }
+            else
+            {
+              B[1]+=Arr[i];
+            }
+          }
+          return B;
+        };
+<hr>
+Q.5 Find wheather the number is present or not
+const Find_Num = (array,N,M) => 
+    {
+  for(let i=0; i < N; i++)
+  {
+    if(array[i]===M)
+    {
+      return 'YES';
+    }
+  }
+  return 'NO';
+};
+ <hr>
+ Q.6 Higher Age
+        const highAge = (N, Arr) => 
+        {
+        let B=[];
+        let j=0;
+        for(let i=0; i=18)
+        {
+        B[j]=Arr[i];
+        j++;
+        }
+        }
+        return B;
+        };
+        <hr>
+        Q.7 Increment the Array Elements
+const Inc_Arr = (array,N) => 
+        {
+        var answer = "";
+        for(let i=0; i
+ <
+
+N;i++)
+        {
+         array[i]+=1;
+        }
+      for(let i=0; i{
+        answer = answer + array[i] + " ";
+        }
+        console.log(answer);
+        };
+        <hr>
+
+Q.8 Pass or fail
+const isAllPass = (N, Arr) => 
+        {for(let i=0;i  {
+            if(Arr[i]<32){
+           
+ return "NO";
+              }
+            }
+            return "YES";
+        };
+        hr
+        Q.9 Unique color Shirt
+        function Unique_Shirts (arr,N) {
+         let freq=[1001];
+      
+         for(let i=0;i<1001;i++)
+{
+           freq[i]=0;
+         }
+         
+         for(let i=0;i
+{
+           freq[arr[i]]++;
+         }
+        let ans=0;
+        
+        for(let i=0;i<1001;i++)
+{
+          if(freq[i]===1) {
+            ans++;
+          }
+        }
+        return ans;
+      }
+      hr
+
+      Q.10 Min or Max
+ function arrayMin(arr) 
+        {
+        let min=arr[0]; 
+        for(let i=0; i < arr.length; i++)
+        {
+        if(arr[i+1] < min)
+        {
+         min=arr[i+1];
+         }
+        }
+        return min;
+        }
+        function arrayMax(arr) {
+        let max=arr[0];
+        for (let i=0; i < arr.length; i++)
+        {
+        if(arr[i+1] > max)
+        {
+        max=arr[i+1];
+        }
+        }
+        return max;
+        } 
+        <hr>
+        Q.11 Birthday Game
+function Birthday_Game(arr,D ,M) {
+        let count=0; let N=arr.length;
+        for(let i=0; i < N; i++)
+        {
+          let j=0; let k=i; let sum=0;
+          while(j < M)
+          {
+            sum = sum + arr[k];
+            j++; k++;
+          }
+          if(sum===D)
+          {
+            count++;
+          }
+        }
+        return count;
+  }
+
+    </pre>
+</body>
+</html>
